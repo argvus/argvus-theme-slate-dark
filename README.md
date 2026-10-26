@@ -20,12 +20,11 @@ Official ARGVUS Dark theme, `slate-dark`, with its Sticky and Float variants.
 | Mode | `dark` |
 | Default highlight | `#7391a5` |
 | GTK color scheme | `prefer-dark` |
-| Calendar stylesheet | `slate-dark` |
 | Package | `argvus-theme-slate-dark` |
 | Wallpaper | `/usr/share/backgrounds/argvus/abstract/dark/slate-abstract-dark.jxl` |
 
 The values above are the ones declared in
-`src/usr/share/argvus/appearance/themes.d/slate-dark/theme.toml`, the manifest that the
+`src/usr/share/argvus/themes/slate-dark/theme.toml`, the manifest that the
 desktop reads. The manifest is the source of truth; this page describes it.
 
 ## Installing
@@ -41,9 +40,13 @@ Select the theme in the Control Center (Appearance > Themes), or run
 
 ## Files
 
-The package installs the theme's per-component files under `/usr/share/argvus` (and the
-calendar stylesheet under `/etc/argvus/taskbar/calendar/themes`). Each component that
-the theme styles has its own directory, listed by `find src -type f` in this repository.
+The package installs the theme manifest,
+`/usr/share/argvus/themes/slate-dark/theme.toml` (schema 2: name, category, wallpaper and
+the palette), the templates it overrides under `overrides/` when it has any, and its
+wallpapers under `/usr/share/backgrounds/argvus`. The files of every component are
+rendered from the palette by the component's own templates when the theme is applied,
+for Sticky and Float alike. `argvus theme check src/usr/share/argvus/themes/slate-dark`
+renders them all and reports any error.
 
 ## Development
 
