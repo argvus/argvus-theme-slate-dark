@@ -1,6 +1,6 @@
 # Slate Dark theme for ARGVUS
 
-Official ARGVUS Dark theme, `slate-dark`, with its Sticky and Float variants.
+Official ARGVUS Dark theme, `slate-dark`, with its Sticky and Spaced variants.
 
 [![CI](https://github.com/argvus/argvus-theme-slate-dark/actions/workflows/ci.yml/badge.svg)](https://github.com/argvus/argvus-theme-slate-dark/actions/workflows/ci.yml)
 [![Release](https://github.com/argvus/argvus-theme-slate-dark/actions/workflows/release.yml/badge.svg)](https://github.com/argvus/argvus-theme-slate-dark/actions/workflows/release.yml)
@@ -15,7 +15,7 @@ Official ARGVUS Dark theme, `slate-dark`, with its Sticky and Float variants.
 
 | Field | Value |
 | --- | --- |
-| Theme ID | `slate-dark` (Float variant: `slate-dark-float`) |
+| Theme ID | `slate-dark` (Spaced variant: `slate-dark-spaced`) |
 | Display name | Slate Dark |
 | Mode | `dark` |
 | Default highlight | `#7391a5` |
@@ -45,7 +45,7 @@ The package installs the theme manifest,
 the palette), the templates it overrides under `overrides/` when it has any, and its
 wallpapers under `/usr/share/backgrounds/argvus`. The files of every component are
 rendered from the palette by the component's own templates when the theme is applied,
-for Sticky and Float alike. `argvus theme check src/usr/share/argvus/themes/slate-dark`
+for Sticky and Spaced alike. `argvus theme check src/usr/share/argvus/themes/slate-dark`
 renders them all and reports any error.
 
 ## Development
